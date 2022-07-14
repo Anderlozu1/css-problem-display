@@ -1,0 +1,57 @@
+
+/*    max-width: 50%;                   USA UN MÁXIMO DE 50% DE LA PANTALLA Y NO PUEDE SER MENOR A 50%
+
+      position: static;                 A PESAR DE QUE SE CAMBIEN LOS VALORES NO HAY DIFERENCIA
+              relative;                 SE UTILIZA: TOP, LEFT, RIGHT Y BOTTOM AL GUSTO, CAMBIANDO VALORES,
+                                        A PESAR DE QUE OTRAS ETIQUETAS ESTÉN EN SU LUGAR, SIEMPRE VA A TENER SU
+                                        LINEA YA QUE ES DE TIPO BLOQUE. OSEA QUE NO SE VA A AMONTONAR
+
+                 fixed;                 DE ACUERDO AL TAMAÑO DE LA PANTALLA, SE POSICIONA UTILIZANDO LOS 4 ELEMENTOS
+                                        NO RESPETA LOS ESPACIOS QUE HAY ENTRE ETIQUETAS,
+                                         SE MANTIENE DE MANERA FIJA SIN IMPORTAR DONDE SE MUEVA LA PAGINA, 
+                                         SI ESTE TIENE UN PADDING-BOTTOM: grande;
+                                        */
+
+                 
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+}
+
+h1{
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    color: #f34d32;
+    background-color: gray;
+    padding: 6px;
+    margin: 20px auto;
+    border: 6px double #f34d32;
+    text-shadow: 3px 3px 6px blueviolet; 
+    font-size: 2em;
+    font-style:italic;
+    font-weight: 400;
+    font-family: 'Times New Roman';
+}
+
+/* USA EL 50% DE LA PANTALLA   */
+
+div{
+    position: relative;     /* static, relative, fixed */
+    top: 100px;             /* ARRIBA    */
+    right: 40px;            /* DERECHA   */
+    bottom: 180px;          /* ABAJO     */
+    left: 20px;             /* IZQUIERDA */
+
+    /* max-width: 50%;               Es mejor utilizar los %                             */
+                                
+    border: 6px groove #f35d35;
+    background-color: rgba(175, 167, 167, 0.829);
+    padding: 10px;
+    outline: 10px double rgb(239, 67, 5);
+    display: block;
+    margin: 40px auto;
+
+    
+}
